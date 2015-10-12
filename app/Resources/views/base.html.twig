@@ -1,0 +1,80 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}{% endblock %} - DegustCo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/knacss.css') }}" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ asset('css/mystyle.css') }}" />
+        <link href="{{ asset('css/jquery.bxslider.css') }}" rel="stylesheet" />
+        {% block stylesheet %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+
+    <body>
+        {% block nav %} {% include '::header.html.twig' %} {% endblock %}
+        {% block body %}  {% endblock %}
+
+        <footer class="footer container-fluid">
+            <div class="container">
+                <div class="row footer_content">
+                    <div class="col-sm-4 footer_content_col">
+                        <div class="footer_content_col_inner">
+                            <h5>DEGUST&amp;CO</h5>
+                            <ul>
+                                <li><a href="#" title="Qui sommes-nous ?">Qui sommes-nous ?</a></li>
+                                <li><a href="#" title="Rejoindre l&#039;équipe">Rejoindre l&#039;équipe</a></li>
+                                <li><a href="#" title="Voir tous les animateurs">Voir tous les animateurs</a></li>
+                                <li><a href="#" title="Mentions légales &amp; CGU">Mentions légales &amp; CGU</a></li>
+                                <li><a href="#" title="Politique de cookies">Politique de cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 footer_content_col">
+                        <div class="footer_content_col_inner">
+                            <h5>ESPACE PRO</h5>
+                            <ul>
+                                <li><a href="#" title="Rejoindre la communauté des animateurs">Intégrer le réseau d&#039;animateurs</a></li>
+                                <li><a target="_blank" href="#" title="Mon interface en ligne">Mon interface en ligne</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 footer_content_col">
+                        <div class="footer_content_col_inner">
+                            <h5>L&#039;AVENTURE</h5>
+                            <ul>
+                                <li><a href="#" class="open_popin" id="NL_trigger" data-target="NL_popin" title="Newletter">Newsletter</a></li>
+                                <li><a href="http://blog.degustandco.com/" target="_blank" title="Blog">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="row footer_content">
+                    <div class="col-sm-7 footer_content_col">
+                        <a href="tel:+33975181014"><i class="fa fa-phone prs"></i>09 75 18 10 14</a>&nbsp;&nbsp;
+                        <a href="mailto:contact@degustandco.com"><i class="fa fa-envelope-o prs pls"></i>contact@degustandco.com</a>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER BOTTOM -->
+            <div class="footer_bottom text-center row">
+                <span class="footer_bottom_content col-sm-12">Degust&amp;Co - Fait à Lyon avec goût ! L’abus d’alcool est dangereux pour la santé - A consommer avec modération.</span>
+            </div>
+        </footer>
+
+        {% block javascript %}{% endblock %}
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('js/parallax.js') }}"></script>
+        <script src="{{ asset('js/jquery.bxslider.js') }}"></script>
+                <script type="text/javascript">
+            $(document).ready(function(){
+                $('.bxslider').bxSlider();
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<div class="background2">
+    <div class="container center">
+        <form action=" {{ path('envoi_reussi') }}" method="post" class="blogger">
+    	<div class="row home_how2">
+        	<div class="col-sm-4 txtcenter"><img src="{{ asset('img/punchline.png') }}" alt="punchline"></div>
+            <div class="col-sm-4 txtcenter" >
+                
+                {{ form_row(form.Evenement) }}
+                {{ form_row(form.Budget) }}
+                {{ form_row(form.Nom) }}
+                {{ form_row(form.Mail) }}
+                
+        	</div>
+            <div class="col-sm-4 txtcenter">
+               
+                {{ form_row(form.Convives) }}
+                {{ form_row(form.Date) }}
+
+                {{ form_row(form.Thematique) }}
+                {{ form_row(form.Demander) }}
+                
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+
+<div class="container center">
+    <h1 class="maintitle">Degust&Co : comment ça marche ?</h1>
+    <div class="row home_how">
+        <div class="col-sm-4 txtcenter">
+            <img class="home_how_icon" src="{{ asset('img/loupe.png') }}" alt="Trouvez">
+            <h4 class="c_5e5f5f">Trouvez</h4>
+            <p class="text-center">Selon votre ville, la thématique ou la date de votre choix, seul ou en groupe, vous trouverez alors tous les événements et les formules de groupe proposés par nos partenaires.</p>
+        </div>
+        <div class="col-sm-4 txtcenter">
+            <img class="home_how_icon" src="{{ asset('img/calendar.png') }}" alt="Réservez">
+            <h4 class="c_5e5f5f">Réservez</h4>
+            <p class="text-center">Votre sélection faite, vous réservez une expérience gustative en un simple clic. Indiquez le nombre de convives souhaités, vos coordonnées et payez en ligne en toute sécurité !</p>
+        </div>
+        <div class="col-sm-4 txtcenter">
+            <img class="home_how_icon2" src="{{ asset('img/verre.png') }}" alt="Profitez">
+            <h4 class="c_5e5f5f">Profitez</h4>
+            <p class="text-center">Notre animateur partenaire vous fera alors découvrir son univers rien que pour le plaisir de vos papilles ! Chez vous ou à l’extérieur, vivez une expérience originale et unique.</p>
+        </div>
+    </div>
+</div>
+
+<div class="fullscreen background parallax" style="background-image:url('{{ asset ('img/parallax.jpg') }}');" data-img-width="1600" data-img-height="1064" data-diff="100"></div>
+
+<div style="background:#FFF">
+    <div class="container center texte ptl">
+        <ul class="bxslider">
+            <li class ="liste">" Très bon projet, site nickel, offre intéressante ! J'adore ! " <br><br><b>David</b></li>
+            <li class ="liste">" Je vous félicite pour ce projet. Je trouve l’idée géniale et surtout très utile<br> pour organiser des événement à thèmes ! " <br><br><b>Mouna</b></li>
+            <li class ="liste">" Votre site est clair et agréable à consulter. " <br><br><b>Eric</b></li>
+        </ul>
+    </div>
+</div>

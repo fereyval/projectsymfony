@@ -1,0 +1,8 @@
+test_general_homepage:
+    path:     /
+    defaults: { _controller: TestGeneralBundle:Default:index }
+
+envoi_reussi:
+    path:	/succes
+    defaults: { _controller: TestGeneralBundle:Default:succes }
+

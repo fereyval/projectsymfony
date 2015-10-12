@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Antonio-Regular';
+    src:url('../fonts/Antonio-Regular.ttf.woff') format('woff'),
+        url('../fonts/Antonio-Regular.ttf.svg#Antonio-Regular') format('svg'),
+        url('../fonts/Antonio-Regular.ttf.eot'),
+        url('../fonts/Antonio-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height:100%;
+}
+
+li {
+	list-style-type: none;
+}
+
+.liste {
+	text-align: center;
+	font-family: 'Antonio-Regular';
+	font-size: 30px;
+	font-weight: 400;
+}
+
+b {
+	font-size: 18px;
+}
+
+.conteneur {
+		position: relative;
+		width: 1170px;
+	}
+
+/*---- Bandeau -------*/
+.header {
+	position: relative;
+	background: #FFF;
+	min-height: 120px;
+}
+	.header-logo {
+		padding-left: 40px; 
+	}
+
+.background2 {
+	background: url('../img/background2.png') no-repeat center top;
+    background-size: cover;
+}
+
+.maintitle {
+	text-align: center;
+	padding-top: 30px;
+	font-family: 'Antonio-Regular';
+	font-size: 40px;
+	font-weight: 400;
+
+}
+
+.home_how {
+    padding-top: 50px;
+    color: #7b7b7b;
+}
+
+.home_how2 {
+    padding-top: 10px;
+    color: #7b7b7b;
+}
+
+.home_how_icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.home_how_icon2 {
+    width: 78px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.texte {
+	min-height: 260px;
+
+}
+
+
+.background {
+    background-repeat:no-repeat;
+    background-position:50% 50%
+    background-position:50% 50%\9 !important;
+    min-height: 400px;
+}
+
+.footer_bottom {
+	background-color: #4b4b4b;
+	color: #fff;
+	font-size: 12.5px;
+	font-weight: 300;
+	font-family:'Roboto',Arial,Verdana,sans-serif;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.footer_bottom_content {
+	padding-right: 50px;
+	padding-left: 50px; 
+}
+
+.footer_content {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+.footer_content:first-child {
+	border-bottom: 1px solid #5e5f5f;
+}
+
+@media (min-width: 768px) {
+	.footer_content:first-child {
+		padding-top: 50px;
+	}
+
+	.footer_content .footer_content_col:first-child {
+		padding-left: 0;
+		text-align: left;
+	}
+
+	.footer_content .footer_content_col:last-child {
+		padding-right: 0;
+		text-align: right;
+	}
+
+	.footer_content_col_inner {
+		display: inline-block;
+		text-align: left;
+	}
+}
+
+@media (max-width: 768px) {
+	.footer_content > div {
+		padding-bottom: 10px;
+	}
+}
+
+footer,
+footer a {
+	background-color: #303030;
+	color: #fff;
+	font-size: 12.5px;
+}
+
+footer h5 {
+	background-color: #303030;
+	color: #5e5f5f;
+	font-size: 15px;
+	font-family: 'Roboto',Arial,Verdana,sans-serif;
+	font-weight: 600;
+	padding: auto auto;
+	margin: auto auto;
+}
+
+footer a:hover {
+	color: #ca0861;
+	text-decoration: none;
+}
+
+form.blogger
+{ 
+	font-size: 18px; 
+	text-align: center;
+	padding-right: 0px;
+}
+
+form.blogger label 
+{ 
+	margin-right: 10px; text-align: center; width: 300px; font-weight: bold; vertical-align: top; font-family: 'Antonio-Regular'; color: #b3b3b3;
+}
+
+form.blogger input[type="text"], form.blogger input[type="email"]
+{ 
+	width: 300px; line-height: 26px; font-size: 20px; min-height: 26px; border-radius: 2px; height: 30px;
+}
+
+form.blogger select 
+{ 
+	width: 300px; height: 30px; font-size: 18px; font-family: 'Roboto Condensed',Arial,Verdana,sans-serif;
+    font-weight: 400;
+}
+
+form.blogger button 
+{ 
+	width: 150px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 17.8px;
+    cursor: pointer;
+    border-radius: 2px;
+    vertical-align: middle;
+    background: #ca0861;
+    border: none;
+    color: white;
+}
+
+form.blogger button:hover
+{ 
+	background: #f85da5; 
+}
+
+
+.home_how .col-sm-4 {
+    padding-bottom: 50px;
+}
